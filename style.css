@@ -185,11 +185,3 @@ figcaption {
 .navbar-inner nav a:hover {
   color: #e0fdef;
 }
-
-
-
-
-
-* {
-  outline: 1px solid red;
-}
