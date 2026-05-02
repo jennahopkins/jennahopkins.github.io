@@ -188,49 +188,8 @@ figcaption {
 
 
 
-/* Prevent accidental horizontal overflow */
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
-/* Make all sizing include padding */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-/* Keep images from forcing page wider */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Fix navbar overflow */
-.navbar-full {
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-  border-radius: 0;
-}
-
-.navbar-inner {
-  width: 100%;
-  max-width: 1000px;
-  padding: 10px 24px;
-}
-
-.navbar-inner nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 16px;
-}
-
-.navbar-inner nav a {
-  margin-left: 0;
-  white-space: nowrap;
+* {
+  outline: 1px solid red;
 }
