@@ -11,10 +11,15 @@ body {
   font-family: Arial, sans-serif;
   background: #f7f4ed;
   color: #1f2933;
-  max-width: 1000px;
   margin: 0 auto;
   padding: 40px 24px;
   line-height: 1.6;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
 }
 
 header {
