@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wildfire Severity Modeling Project</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <main class="project-page">
+
+    <section class="project-hero">
+      <p><a href="../index.html">← Back to Home</a></p>
+
+      <span class="badge">Environmental Data Science + Machine Learning</span>
+
+      <h1>Wildfire Severity Modeling in Northern California</h1>
+
+      <p class="tagline">
+        A data science project using geospatial environmental data and machine learning
+        to explore where high-severity wildfire is most likely and how fuel treatments
+        could be better targeted.
+      </p>
+
+      <div class="button-group">
+        <a class="button" href="https://github.com/YOURUSERNAME/YOUR-REPO" target="_blank">
+          View Project Repository
+        </a>
+
+        <a class="button secondary" href="https://drive.google.com/YOUR-LINK" target="_blank">
+          Read White Paper
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This group project focused on recent spikes in wildfire severity in northern California.
+        We analyzed major wildfire events using environmental, climate, fuel, vegetation, topographic,
+        and treatment data to better understand the conditions associated with high-severity fire.
+      </p>
+
+      <p>
+        The project developed two complementary modeling approaches: a spatial wildfire severity
+        risk model to identify high-risk locations, and a fire regime classification framework to
+        connect different landscape conditions with more appropriate fuel treatment strategies.
+      </p>
+    </section>
+
+    <section>
+      <h2>Problem</h2>
+      <p>
+        Wildfires in northern California are becoming more severe, costly, and difficult to manage.
+        Long-term fire suppression has contributed to fuel buildup, while climate change has increased
+        atmospheric dryness and fuel aridity. This creates a management problem: limited fuel treatment
+        resources are not always aligned with the places and landscape conditions most likely to produce
+        high-severity fire.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data</h2>
+      <p>
+        The project combined multiple public geospatial datasets across ten major northern California
+        wildfires from 2014–2022. Burn severity was measured using MTBS Relative differenced Normalized
+        Burn Ratio (RdNBR). Environmental predictors included LANDFIRE fuel, vegetation, and topographic variables,
+        PRISM climate data, and CAL FIRE fuel treatment data.
+      </p>
+
+      <ul>
+        <li><strong>Fire severity:</strong> MTBS RdNBR burn severity data</li>
+        <li><strong>Climate:</strong> PRISM precipitation, maximum temperature, and vapor pressure deficit</li>
+        <li><strong>Landscape:</strong> LANDFIRE fuel model, vegetation type, canopy cover, elevation, slope, and aspect</li>
+        <li><strong>Treatments:</strong> CAL FIRE fuel reduction project data</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Methods</h2>
+
+      <div class="method-card">
+        <h3>1. Spatial Severity Risk Model</h3>
+        <p>
+          We reframed wildfire severity as a binary classification problem, distinguishing
+          high/moderate severity areas from low-severity or increased-vegetation areas. A Random Forest
+          model was trained using environmental predictors such as vapor pressure deficit, temperature,
+          precipitation, canopy cover, elevation, fuel model, and vegetation type.
+        </p>
+      </div>
+
+      <div class="method-card">
+        <h3>2. Fire Regime Classification</h3>
+        <p>
+          We used HDBSCAN clustering to identify distinct fire regime groups based on pre-fire
+          environmental conditions. These regimes helped connect different combinations of fuel,
+          vegetation, and climate conditions to more targeted treatment strategies, such as prescribed
+          fire, thinning, fuel breaks, or defensible space.
+        </p>
+      </div>
+
+      <div class="method-card">
+        <h3>3. Model Validation and Treatment Simulation</h3>
+        <p>
+          The risk model was applied to independent wildfire events, including the McCash and Park fires.
+          Predicted high-risk locations were compared with observed treatment placements to evaluate
+          whether model-guided treatment allocation could capture more high-severity areas under the
+          same resource constraints.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Results</h2>
+      <ul>
+        <li>
+          A Random Forest model was used to estimate the probability of high-severity wildfire conditions
+          across northern California landscapes.
+        </li>
+        <li>
+          Model-guided treatment placement captured a higher proportion of high-severity pixels than
+          observed treatment locations in independent fire case studies.
+        </li>
+        <li>
+          HDBSCAN clustering identified eleven distinct fire regimes based on fuel, vegetation, topography,
+          and climate conditions.
+        </li>
+        <li>
+          A supervised Random Forest model predicted fire regime membership with about 68% accuracy,
+          suggesting that regime classifications could be generalized to new locations.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Example Visualizations</h2>
+
+      <figure>
+        <img src="../assets/wildfire-severity-map.png" alt="Map of burn severity across northern California fires" class="project-image" />
+        <figcaption>
+          Spatial analysis of burn severity across ten northern California wildfires.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="../assets/treatment-comparison.png" alt="Comparison of observed and model-guided treatment placement" class="project-image" />
+        <figcaption>
+          Comparison of observed treatment placement and model-guided treatment prioritization.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Recommendation</h2>
+      <p>
+        The final recommendation was a two-stage decision framework. First, land management agencies
+        could use the wildfire severity risk model to identify areas with higher likelihood of severe fire.
+        Then, they could use the fire regime classification framework to select treatment types that better
+        match local fuel structure, vegetation, and climate conditions.
+      </p>
+    </section>
+
+    <section>
+      <h2>Takeaways</h2>
+      <ul>
+        <li>Worked with real-world geospatial and environmental datasets</li>
+        <li>Applied machine learning methods to a policy-relevant environmental problem</li>
+        <li>Gained experience communicating technical results through a formal white paper</li>
+        <li>Learned how model outputs can support decision-making, not just prediction</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
