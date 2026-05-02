@@ -7,16 +7,22 @@
   --border: #d6d3c9;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #f7f4ed;
   color: #1f2933;
-  margin: 0 auto;
-  padding: 40px 24px;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 main {
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 24px;
@@ -72,8 +78,8 @@ nav a,
   transition: 0.2s ease;
 }
 
-
 .project-page {
+  width: 100%;
   max-width: 850px;
   margin: 0 auto;
   padding: 40px 24px;
