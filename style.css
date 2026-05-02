@@ -128,3 +128,27 @@ figcaption {
   color: #555;
   margin-top: 8px;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1f2933;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #2f855a;
+}
