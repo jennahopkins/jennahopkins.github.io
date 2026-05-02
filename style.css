@@ -129,12 +129,26 @@ figcaption {
   margin-top: 8px;
 }
 
-.navbar {
+/* FULL WIDTH NAVBAR */
+.navbar-full {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* INNER CONTENT (aligned with rest of page) */
+.navbar-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px 24px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  margin-bottom: 30px;
 }
 
 .logo {
@@ -142,13 +156,13 @@ figcaption {
   font-weight: bold;
 }
 
-.navbar a {
+.navbar-inner nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #1f2933;
+  color: white;
   font-weight: 500;
 }
 
-.navbar a:hover {
-  color: #2f855a;
+.navbar-inner nav a:hover {
+  color: #e0fdef;
 }
