@@ -29,11 +29,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-.tagline {
-  font-size: 1.3rem;
-  max-width: 700px;
-}
-
 nav a,
 .button {
   display: inline-block;
@@ -65,12 +60,71 @@ nav a,
   transition: 0.2s ease;
 }
 
+
+.project-page {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.project-hero {
+  background: linear-gradient(135deg, #d8f3dc, #f7f4ed);
+  padding: 40px;
+  border-radius: 24px;
+  margin-bottom: 40px;
+}
+
 .badge {
   display: inline-block;
   background: #d8f3dc;
   color: #22543d;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.85rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  max-width: 750px;
+}
+
+.button-group {
+  margin-top: 22px;
+}
+
+.button {
+  display: inline-block;
+  background: #2f855a;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.button.secondary {
+  background: #4a5568;
+}
+
+.method-card {
+  background: white;
+  border: 1px solid #d6d3c9;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
 }
