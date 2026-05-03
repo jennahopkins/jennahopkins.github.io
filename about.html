@@ -39,12 +39,60 @@
     </div>
 
     <div class="about-photo-card">
-        <img src="assets/jenna_photo.jpg" alt="Jenna Hopkins" />
-        <p>Data Science + Computer Science student</p>
+        <button class="carousel-btn prev" onclick="changePhoto(-1)">‹</button>
+
+        <img id="about-carousel-img" src="assets/softball_photo.jpeg" alt="Jenna Hopkins" />
+
+        <button class="carousel-btn next" onclick="changePhoto(1)">›</button>
+
+        <p id="about-carousel-caption">I'm a member of Willamette's softball team!</p>
     </div>
 
   </section>
 
 </main>
+
+<script>
+  const photos = [
+    {
+      src: "assets/sball_photo.jpeg",
+      caption: "I'm a member of Willamette's softball team!"
+    },
+    {
+      src: "assets/formal_photo.jpeg",
+      caption: "At an awards show with friends!"
+    },
+    {
+      src: "assets/ag_photo.jpeg",
+      caption: "Pretty sunrise while working with a plant trimming machine!"
+    },
+    {
+      src: "assets/berries_photo.jpeg",
+      caption: "I spent a summer working for the Marion Berries Baseball Club!"
+    },
+    {
+      src: "assets/hiking_photo.jpeg",
+      caption: "Enjoying a hike at Silver Falls!"
+    }
+  ];
+
+  let currentPhoto = 0;
+
+  function changePhoto(direction) {
+    currentPhoto = currentPhoto + direction;
+
+    if (currentPhoto < 0) {
+      currentPhoto = photos.length - 1;
+    }
+
+    if (currentPhoto >= photos.length) {
+      currentPhoto = 0;
+    }
+
+    document.getElementById("about-carousel-img").src = photos[currentPhoto].src;
+    document.getElementById("about-carousel-caption").textContent = photos[currentPhoto].caption;
+  }
+</script>
+
 </body>
 </html>
